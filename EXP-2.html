@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Job Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .form-container {
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Job Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="form-group">
+                <label>Skills:</label>
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="js">
+                <label for="js">JavaScript</label>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position Applied For:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select Position</option>
+                    <option value="developer">Software Developer</option>
+                    <option value="designer">UI/UX Designer</option>
+                    <option value="manager">Project Manager</option>
+                    <option value="analyst">Business Analyst</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" min="0" max="50" required>
+            </div>
+
+            <div class="form-group">
+                <label for="salary">Expected Salary:</label>
+                <input type="range" id="salary" name="salary" min="30000" max="150000" step="5000">
+                <output for="salary" id="salaryOutput"></output>
+            </div>
+
+            <div class="form-group">
+                <label for="website">Portfolio Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Interview Time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Type your comments here"></textarea>
+            </div>
+
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </div>
+</body>
+
+</html>

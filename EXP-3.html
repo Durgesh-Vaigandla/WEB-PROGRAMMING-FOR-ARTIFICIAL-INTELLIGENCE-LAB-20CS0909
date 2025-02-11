@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Media Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .media-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Media Elements Demo</h1>
+
+    <!-- Video Element -->
+    <div class="media-container">
+        <h2>Video Example</h2>
+        <video width="640" height="360" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            <source src="sample-video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Audio Element -->
+    <div class="media-container">
+        <h2>Audio Example</h2>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            <source src="sample-audio.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <!-- Picture Element -->
+    <div class="media-container">
+        <h2>Picture Element Example</h2>
+        <picture>
+            <source media="(min-width: 650px)" srcset="./assets/large.svg">
+            <source media="(min-width: 465px)" srcset="./assets/medium.svg">
+            <img src="./assets/small.svg" alt="Responsive Image" style="width:auto;">
+        </picture>
+    </div>
+
+    <!-- Embedded Content -->
+    <div class="media-container">
+        <h2>Embedded YouTube Video</h2>
+        <iframe width="640" height="360"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+</html>
