@@ -1,0 +1,15 @@
+-----------FEE RECEIPT-----------
+Student Name: Durgesh
+Father's Name: Lavanya Kumar
+Roll Number: 234E5A3302
+Email ID: vvipdurgesh55@gmail.com
+Contact Number: 9394959659
+Address: Civic-439	
+Nationality: India
+10th Year: 2014  Points: 8.8
+12th Year: 2017  %: 74
+Course: CSE
+Gender: Male
+Group: SEAS
+Department: CSE (2,50,000)  Hostel: 5 SHARE (1,20,000)
+Hostel Fee: 1.20 Lakhs
